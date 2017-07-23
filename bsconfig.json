@@ -1,0 +1,8 @@
+{
+  "name": "basic",
+  "sources": ["src"],
+  "bs-dependencies": ["reason-react", "bs-webapi"],
+  "reason": {
+    "react-jsx": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "bs-loader": "^1.5.8",
+    "bs-platform": "^1.8.1",
+    "loglevel": "^1.4.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.0"
+  },
+  "dependencies": {
+    "bs-webapi": "^0.5.0",
+    "html-webpack-plugin": "^2.29.0",
+    "react": "next",
+    "react-dom": "next",
+    "reason-react": "^0.2.3"
+  },
+  "name": "OCaml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "re",
+      "js",
+      "ml"
+    ],
+    "testMatch": [
+      "**/src/*_test.re"
+    ],
+    "transform": {
+      ".(re|ml)": "bs-loader"
+    }
+  }
+}
