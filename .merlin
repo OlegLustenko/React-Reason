@@ -1,17 +1,17 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx "C:\projects\React-Reason\node_modules\bs-platform\bin\reactjs_jsx_ppx_2.exe"
-FLG -ppx C:\projects\React-Reason\node_modules\bs-platform\bin\bsppx.exe
-S C:\projects\React-Reason\node_modules\bs-platform\lib\ocaml
-B C:\projects\React-Reason\node_modules\bs-platform\lib\ocaml
+FLG -ppx '/home/dev/projects/OCaml/node_modules/bs-platform/bin/reactjs_jsx_ppx_2.exe'
+FLG -ppx /home/dev/projects/OCaml/node_modules/bs-platform/bin/bsppx.exe
+S /home/dev/projects/OCaml/node_modules/bs-platform/lib/ocaml
+B /home/dev/projects/OCaml/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
-S C:\projects\React-Reason\node_modules\reason-react\lib\ocaml
-B C:\projects\React-Reason\node_modules\reason-react\lib\ocaml
-S C:\projects\React-Reason\node_modules\bs-webapi\lib\ocaml
-B C:\projects\React-Reason\node_modules\bs-webapi\lib\ocaml
-S src\elm-basic
-B lib\bs\src\elm-basic
-S src\components
-B lib\bs\src\components
+S /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
+B /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
+S /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
+B /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
+S src/elm-basic
+B lib/bs/src/elm-basic
+S src/components
+B lib/bs/src/components
 S src
-B lib\bs\src
+B lib/bs/src
 ####BSB GENERATED: NO EDIT}
