@@ -1,4 +1,6 @@
 include Html;
+open ReasonJs;
+
 let component = ReasonReact.statelessComponent "App";
 
 let handleClick _event _self => Js.log "clicked!";
@@ -33,6 +35,7 @@ let make ::message _children => {
           <Exercise2 name=exercise2Data.shortName />
           <Exercise2 name=exercise2Data.longName />
           <hr />
+          <Exercise3 />
       </ul>  
     </div>
   

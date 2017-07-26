@@ -1,6 +1,6 @@
 {
   "name": "basic",
-  "sources": ["src"],
+  "sources": ["src", "src/components", "src/elm-basic"],
   "bs-dependencies": ["reason-react", "bs-webapi"],
   "reason": {
     "react-jsx": 2
