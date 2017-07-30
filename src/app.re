@@ -32,10 +32,13 @@ let make ::message _children => {
       <ul>          
           ("1: " |> Html.text) <Exercise1 />
           <hr />
+          ("2: " |> Html.text)
           <Exercise2 name=exercise2Data.shortName />
           <Exercise2 name=exercise2Data.longName />
           <hr />
+          ("3: " |> Html.text)
           <Exercise3 />
+          <Exercise4 />
       </ul>  
     </div>
   

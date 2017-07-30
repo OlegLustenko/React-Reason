@@ -1,6 +1,13 @@
 {
   "name": "basic",
-  "sources": ["src", "src/components", "src/elm-basic"],
+  "sources": [
+    "src",
+    "src/components",
+    "src/elm-basic",
+    "src/elm-basic/01-functions",
+    "src/elm-basic/02-more-on-functions",
+    "src/elm-basic/03-type-annotation"
+  ],
   "bs-dependencies": ["reason-react", "bs-webapi"],
   "reason": {
     "react-jsx": 2

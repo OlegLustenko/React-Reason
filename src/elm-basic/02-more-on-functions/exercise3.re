@@ -3,15 +3,14 @@ open Utils;
 
 type t = string;
 let (*=) firstString secondString => firstString.[0] == secondString.[0];
-let (>>) = fun f g x => f(g x);
+let (>>) = fun f g x => g(f x);
 let component = ReasonReact.statelessComponent "Exercise3";
 
 
 Js.log(Utils.split_by keep_empty::false (fun x => x == ' ') "S W X A");
 
 /* type wordWrap: string =>  */
-let wordWrap () =>
-     Utils.split_by (fun x => x == ' ') >> List.length;
+let wordWrap = Utils.split_by (fun x => x == ' ') >> List.length;
 
 
 Js.log(String.blit "OK");

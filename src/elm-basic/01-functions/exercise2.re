@@ -7,8 +7,7 @@ let capitalize name maxLength =>
   if (String.length name > maxLength) {
     String.uppercase name
   } else 
-    name
-    ;
+    name;
 
 let make ::name=defPropShortName _children => {
   ...component,
