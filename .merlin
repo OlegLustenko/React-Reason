@@ -21,3 +21,9 @@ B lib/bs/src/components
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}
+
+PKG utop merlin_extend compiler-libs easy-format MenhirLib cmdliner ocaml-migrate-parsetree topkg
+B _build/src
+B _build
+# ^ for package.ml -- avoids errors in Merlin
+S src

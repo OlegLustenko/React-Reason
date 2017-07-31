@@ -24,7 +24,11 @@ let make _children => {
       ReasonReact.arrayToElement (
       Array.of_list (
         List.mapi (fun index cartItem => {
-          <div>(se cartItem.name)</div>
+          <li>
+            <div>(se cartItem.name)</div>
+            <div>(cartItem.qty |> string_of_int |> se)</div>
+            <div>(cartItem.freeQty |> string_of_int |> se)</div>
+          </li>
         }) cart)
       )
     )
