@@ -21,6 +21,11 @@ module.exports = {
         test: /\.(re|ml)$/,
         use: 'bs-loader',
         include: path.resolve(__dirname, 'src')
+      },
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        include: path.resolve(__dirname, 'src')
       }
     ]
   },
