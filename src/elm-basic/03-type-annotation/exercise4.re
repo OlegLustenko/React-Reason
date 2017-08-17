@@ -6,7 +6,7 @@ let se = ReasonReact.stringToElement;
 
 let (>>) f g x => g (f x);
 
-let (<<) ln rn => ln >= rn ? [] : List.concat([ln], [<< ln+1 rn]);
+let rec (<<) ln rn => ln >= rn ? [ln] : [ln] @ (ln+1 << rn);
 
 type oneCart = {
   name: string,

@@ -1,23 +1,21 @@
-type accept;    
+type accept;
 
-type hot = { accept: accept };  
+
 /* type hot; */
-type windowModule = { hot: hot };   
+type update:unit;
 
-external moduleHot: windowModule = "module" [@@bs.val];
+type windowModule = Js.t {. hot: {update}};
 
-let create_Component = fun reactElement => ReactDOMRe.renderToElementWithClassName reactElement "root";
+external moduleHot : windowModule = "module" [@@bs.val];
 
-ReactDOMRe.renderToElementWithClassName <App message="Exercies:"/> "root";
+let create_Component reactElement => ReactDOMRe.renderToElementWithClassName reactElement "root";
 
-Js.log(moduleHot); 
+ReactDOMRe.renderToElementWithClassName <App message="Exercies:" /> "root";
 
-
+if (moduleHot##hot) {
+  Js.log moduleHot
+};
 /* let acceptCallback() => {
-  create_Component <App message="Exercies:"/>
-}; */
-
-
+     create_Component <App message="Exercies:"/>
+   }; */
 /* moduleHot.hot.accept("./app.re", acceptCallback)   */
-
-
