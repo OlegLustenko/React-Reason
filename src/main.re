@@ -1,10 +1,10 @@
 type accept;
 
 
-/* type hot; */
-type update:unit;
+type hot = bool;
+type update;
 
-type windowModule = Js.t {. hot: {update}};
+type windowModule = Js.t {. hot:hot };
 
 external moduleHot : windowModule = "module" [@@bs.val];
 

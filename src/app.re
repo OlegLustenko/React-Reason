@@ -32,6 +32,7 @@ let make ::message _children => {
         ("3: " |> Html.text)
         <Exercise3 />
         <Exercise4 />
+        <Login />
       </ul>
     </div>
 };

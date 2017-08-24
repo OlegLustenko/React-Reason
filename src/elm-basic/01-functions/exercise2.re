@@ -11,7 +11,7 @@ let capitalize name maxLength =>
 
 let make ::name=defPropShortName _children => {
   ...component,
-  render: fun self => {
+  render: fun _self => {
     <div>
       <p>(
         capitalize name 10

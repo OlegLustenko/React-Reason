@@ -1,18 +1,16 @@
-let component = ReasonReact.statelessComponent "Exercise4";
-
 type se = string => ReasonReact.reactElement;
-
-let se = ReasonReact.stringToElement;
-
-let (>>) f g x => g (f x);
-
-let rec (<<) ln rn => ln >= rn ? [ln] : [ln] @ (ln+1 << rn);
-
 type oneCart = {
   name: string,
   qty: int,
   freeQty: int
 };
+let component = ReasonReact.statelessComponent "Exercise4";
+
+
+let se = ReasonReact.stringToElement;
+
+let (>>) f g x => g (f x);
+
 
 /* type cartList = list oneCart; */
 let cart = [
@@ -23,8 +21,8 @@ let cart = [
 
 let calculateFreeQty oneCart :oneCart =>
   switch oneCart.qty {
-  | 5 => {...oneCart, freeQty: 1}
-  | 10 => {...oneCart, freeQty: 5}
+  | _ when oneCart.qty <= 5 => {...oneCart, freeQty: 1}
+  | _ when oneCart.qty >=10 => {...oneCart, freeQty: 5}
   | _ => oneCart
   };
 
