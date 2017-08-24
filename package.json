@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "babel-loader": "^7.1.1",
+    "bs-fetch": "^0.1.1",
     "bs-webapi": "^0.5.0",
     "html-webpack-plugin": "^2.29.0",
     "react": "next",

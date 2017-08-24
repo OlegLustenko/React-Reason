@@ -316,6 +316,10 @@ browserify-zlib@^0.1.4:
   dependencies:
     pako "~0.2.0"
 
+bs-fetch@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.1.1.tgz#1bee13786813eeee697c48959c008bc08ed8210a"
+
 bs-loader@^1.5.8:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/bs-loader/-/bs-loader-1.5.8.tgz#83fb58c1dbf496b8485f144ad33eeeb4bc2ba557"

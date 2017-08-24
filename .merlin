@@ -8,6 +8,8 @@ S /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
 B /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
 S /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
 B /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
+S /home/dev/projects/OCaml/node_modules/bs-fetch/lib/ocaml
+B /home/dev/projects/OCaml/node_modules/bs-fetch/lib/ocaml
 S src/elm-basic/03-type-annotation
 B lib/bs/src/elm-basic/03-type-annotation
 S src/elm-basic/02-more-on-functions

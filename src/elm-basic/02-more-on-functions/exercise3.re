@@ -20,7 +20,7 @@ let sentenceToWrap =
 
 let make _children => {
   ...component,
-  render: fun self => {
+  render: fun _self => {
     <div>
       <h4>(Html.text ("DA" *= "DSSS" ? "OK" : "FALSE"))</h4>
       <h4>(Html.text ("Word-counter: " ^ string_of_int (wordWrap sentenceToWrap)))</h4>

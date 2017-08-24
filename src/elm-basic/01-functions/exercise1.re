@@ -8,7 +8,7 @@ let handleClick _event _self => Js.log "clicked!";
 
 let make _children => {
     ...component,
-  render: fun self => 
+  render: fun _self => 
     <section>
       <div>(Html.text myName)</div>
     </section> 
