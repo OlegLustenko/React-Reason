@@ -6,8 +6,6 @@ B /home/dev/projects/OCaml/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
 S /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
 B /home/dev/projects/OCaml/node_modules/reason-react/lib/ocaml
-S /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
-B /home/dev/projects/OCaml/node_modules/bs-webapi/lib/ocaml
 S /home/dev/projects/OCaml/node_modules/bs-fetch/lib/ocaml
 B /home/dev/projects/OCaml/node_modules/bs-fetch/lib/ocaml
 S src/elm-basic/03-type-annotation
@@ -20,6 +18,8 @@ S src/elm-basic
 B lib/bs/src/elm-basic
 S src/components
 B lib/bs/src/components
+S src/auth
+B lib/bs/src/auth
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}

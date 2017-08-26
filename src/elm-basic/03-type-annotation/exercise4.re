@@ -5,8 +5,6 @@ type oneCart = {
   freeQty: int
 };
 let component = ReasonReact.statelessComponent "Exercise4";
-
-
 let se = ReasonReact.stringToElement;
 
 let (>>) f g x => g (f x);

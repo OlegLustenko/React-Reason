@@ -47,6 +47,7 @@ module.exports = {
     extensions: ['.re', '.ml', '.js']
   },
   devServer: {
+    inline:true,
     hot: true,
     // contentBase: path.resolve(__dirname, 'dist'),
     // quiet: true,
