@@ -1,27 +1,15 @@
+/* open Homework1; */
 type accept;
-
-type hot = Js.t {. accept : (string, unit)};
-
 type update;
-
-type windowModule = Js.t {. hot : hot};
-
-external moduleHot : windowModule = "module" [@@bs.val];
-
+external moduleHot : Js.t {..} = "module" [@@bs.val];
+/* Js.log2 ">>>>>" Homework1.oleg; */
+/* Js.log2 ">>>>>" Homework1.jsOleg; */
 let create_Component reactElement => ReactDOMRe.renderToElementWithClassName reactElement "root";
 
-let acceptCallback = create_Component <App message="Exercies:" />;
+let acceptCallback () => create_Component <App message="Exercies:" />;
+acceptCallback();
 
-/* acceptCallback */
-/* switch moduleHot##hot {
-   | None => None
-   | Some hot =>
-     switch hot {
-     | Some accept => accept ("./app.re", acceptCallback)
-     }
-   }; */
-/* [%%bs.raw {|
-  if(module.hot) {
-    module.hot.accept()
-    }
-  |}]; */
+if (Js.to_bool moduleHot##hot){
+    Js.log2 "%c updating..." "color: green; font-weight: bold;";   
+    moduleHot##hot##accept();
+  };

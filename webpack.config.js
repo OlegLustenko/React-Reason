@@ -2,16 +2,17 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const resolvePath = fileName => path.resolve(__dirname, 'src', 'assets', fileName);
+const resolvePath = fileName =>
+  path.resolve(__dirname, 'src', 'assets', fileName);
 const appHtml = resolvePath('index.html');
 
 console.log(appHtml);
 
 module.exports = {
   // Entry file can be a Reason or OCaml file
-  entry: ['./src/main.re'],
+  entry: './src/main.re',
   output: {
-    filename: 'out.js',
+    filename: './out.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -30,11 +31,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(
+      {
+        // multiStep: true
+      }
+    ),
     new HtmlWebpackPlugin({
       inject: true,
       template: appHtml
-    })
+    }),
+    new webpack.NamedModulesPlugin()
   ],
   node: {
     dgram: 'empty',
@@ -47,20 +53,14 @@ module.exports = {
     extensions: ['.re', '.ml', '.js']
   },
   devServer: {
-    inline:true,
+    inline: true,
     hot: true,
-    // contentBase: path.resolve(__dirname, 'dist'),
-    // quiet: true,
     watchOptions: {
       ignored: /node_modules/
     },
-    watchContentBase: true,
     port: 3000,
-    publicPath: '/',
     overlay: true,
-    // overlay: true,
-    // clientLogLevel: 'error',
-    // stats: 'errors-only',
+    clientLogLevel: 'error',
     historyApiFallback: {
       // Paths with dots should still use the history fallback.
       // See https://github.com/facebookincubator/create-react-app/issues/387.

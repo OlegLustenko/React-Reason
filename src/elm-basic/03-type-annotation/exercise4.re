@@ -35,7 +35,7 @@ let make _children => {
           List.mapi (
             fun _ cartItem => {
               let cartItem = calculateFreeQty cartItem;
-              <li>
+              <li key=cartItem.name>
                 <div> (se ("NAME " ^ cartItem.name)) </div>
                 <div> (se "QTY: ") (cartItem.qty |> string_of_int |> se) </div>
                 <div> (se "freeQty: ") (cartItem.freeQty |> string_of_int |> se) </div>

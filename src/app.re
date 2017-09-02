@@ -1,11 +1,13 @@
 let component = ReasonReact.statelessComponent "App";
-let handleClick _event _self => Js.log "clicked!";
+let handleClick _event _self => Js.log "clicked2333! 2";
 
 let make ::message _children => {
   ...component,
-  render: fun self =>
+  render: fun self => {
+    let something = " _ ) " ^ message;
     <div onClick=(self.handle handleClick)>
-      (ReasonReact.stringToElement message)
+      (ReasonReact.stringToElement something)
       <Elm />
     </div>
+}
 };

@@ -15,7 +15,7 @@
     "react-dom": "next",
     "reason-react": "^0.2.3"
   },
-  "name": "OCaml",
+  "name": "ocaml",
   "version": "1.0.0",
   "main": "index.js",
   "license": "ISC",

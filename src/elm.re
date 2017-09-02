@@ -13,10 +13,10 @@ let make _children => {
   ...component,
   render: fun _self =>
     <ul>
-      ("1: " |> se)
+      ("12: " |> se)
       <Exercise1 />
       <hr />
-      ("2: " |> se)
+      ("22: " |> se)
       <Exercise2 name=exercise2Data.shortName />
       <Exercise2 name=exercise2Data.longName />
       <hr />
