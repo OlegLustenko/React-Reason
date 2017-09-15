@@ -9,18 +9,21 @@ type state = {
 };
 
 let inc _ => INCREMENT;
-let dec _ => DECREMENT; 
+
+let dec _ => DECREMENT;
 
 let reducer action state =>
-switch action {
-| INCREMENT => ReasonReact.Update {...state, counter: state.counter + 1}
-| DECREMENT => ReasonReact.Update {...state, counter: state.counter - 1}
-| Dialog show => ReasonReact.Update {...state, dialog: show}
-};
-
+  switch action {
+  | INCREMENT => ReasonReact.Update {...state, counter: state.counter + 1}
+  | DECREMENT => ReasonReact.Update {...state, counter: state.counter - 1}
+  | Dialog show => ReasonReact.Update {...state, dialog: show}
+  };
 
 let component = ReasonReact.reducerComponent "Counter";
+
+
 let initialState () => {counter: 0, dialog: false};
+
 let se = ReasonReact.stringToElement;
 
 let make _children => {

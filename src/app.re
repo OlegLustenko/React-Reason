@@ -8,8 +8,8 @@ let make ::message _children => {
     let something = " _ ) " ^ message;
     <div onClick=(self.handle handleClick)>
       (ReasonReact.stringToElement something)
-      <Elm />
       (ReasonReact.stringToElement "Counter:") <Counter />
+      <Tabs />
     </div>
   }
 };
