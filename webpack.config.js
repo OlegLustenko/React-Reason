@@ -55,6 +55,7 @@ module.exports = {
   devServer: {
     inline: true,
     hot: true,
+    open: true,
     watchOptions: {
       ignored: /node_modules/
     },

@@ -21,7 +21,8 @@
   "license": "ISC",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "rebuild":"bsb -regen"
   },
   "jest": {
     "moduleFileExtensions": [
