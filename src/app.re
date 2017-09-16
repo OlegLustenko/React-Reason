@@ -6,10 +6,8 @@ let make ::message _children => {
   ...component,
   render: fun self => {
     let something = " _ ) " ^ message;
-    <div onClick=(self.handle handleClick)>
-      (ReasonReact.stringToElement something)
-      (ReasonReact.stringToElement "Counter:") <Counter />
-      <Tabs />
-    </div>
+    <main onClick=(self.handle handleClick)>   
+      <Tabs> <Counter /> </Tabs>
+    </main>
   }
 };

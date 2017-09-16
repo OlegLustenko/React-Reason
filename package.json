@@ -2,18 +2,22 @@
   "devDependencies": {
     "bs-loader": "^1.5.8",
     "bs-platform": "^1.8.1",
+    "css-loader": "^0.28.7",
     "loglevel": "^1.4.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.0"
   },
   "dependencies": {
     "babel-loader": "^7.1.1",
     "bs-fetch": "^0.1.1",
-    "bs-webapi": "^0.5.0",
+    "bs-webapi": "0.6.1",
     "html-webpack-plugin": "^2.29.0",
-    "react": "next",
-    "react-dom": "next",
-    "reason-react": "^0.2.3"
+    "react": "^16.0.0-rc.3",
+    "react-dom": "^16.0.0-rc.3",
+    "reason-react": "^0.2.3",
+    "style-loader": "^0.18.2"
   },
   "name": "ocaml",
   "version": "1.0.0",
@@ -22,7 +26,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "rebuild":"bsb -regen"
+    "rebuild": "bsb -regen"
   },
   "jest": {
     "moduleFileExtensions": [

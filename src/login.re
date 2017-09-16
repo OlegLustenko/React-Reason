@@ -1,7 +1,6 @@
 open Types;
 
 open Bs_fetch;
-
 type state = {counter: int};
 
 let component = ReasonReact.statefulComponent "Login";
