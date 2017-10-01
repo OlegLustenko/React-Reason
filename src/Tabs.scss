@@ -10,10 +10,18 @@
   &-item {
     display: block;
     & > a {
-      display: block;
       padding: 1rem;
-      &:hover {
-        border-bottom: 1px solid salmon;
+      text-decoration: none;
+      vertical-align: bottom;
+      &::after {
+        content: " ";
+        clear: both;
+        display: block;
+        height: .2rem;
+        background: transparent;
+      }
+      &:hover::after {
+        background: #000;
       }
     }
   }

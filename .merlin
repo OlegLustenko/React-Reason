@@ -8,6 +8,8 @@ S /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
 B /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
 S /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
 B /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
+S src/elm-basic/04-firstapp
+B lib/bs/src/elm-basic/04-firstapp
 S src/elm-basic/03-type-annotation
 B lib/bs/src/elm-basic/03-type-annotation
 S src/elm-basic/02-more-on-functions
@@ -16,6 +18,8 @@ S src/elm-basic/01-functions
 B lib/bs/src/elm-basic/01-functions
 S src/elm-basic
 B lib/bs/src/elm-basic
+S src/homeworks
+B lib/bs/src/homeworks
 S src/components
 B lib/bs/src/components
 S src/auth

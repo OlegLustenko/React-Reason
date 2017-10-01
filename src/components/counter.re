@@ -21,7 +21,6 @@ let reducer action state =>
 
 let component = ReasonReact.reducerComponent "Counter";
 
-
 let initialState () => {counter: 0, dialog: false};
 
 let se = ReasonReact.stringToElement;
