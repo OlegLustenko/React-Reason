@@ -8,6 +8,8 @@ S /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
 B /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
 S /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
 B /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
+S src/99problems
+B lib/bs/src/99problems
 S src/elm-basic/04-firstapp
 B lib/bs/src/elm-basic/04-firstapp
 S src/elm-basic/03-type-annotation

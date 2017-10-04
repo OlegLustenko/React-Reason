@@ -1,3 +1,5 @@
+open Problems;
+
 let component = ReasonReact.statelessComponent "Main";
 
 let make _children => {
@@ -15,6 +17,17 @@ module Tasks = {
     | _ => string_of_int num
     };
   let fizzBuzzLoop quota => List.iter (fun item => Js.log (fizzBuzz item)) quota;
+  let fizzBuzz2 num =>
+    switch (num mod 3, num mod 5) {
+    | (0, 0) => "FizzBuzz"
+    | (0, _) => "Fizz"
+    | (_, 0) => "Buzz"
+    | (_, _) => string_of_int num
+    };
+};
+
+for x in 1 to 100 {
+  Js.log (Tasks.fizzBuzz2 x)
 };
 
 type range = int => int;
@@ -32,12 +45,14 @@ let range x y => {
 };
 
 /* let rangeL x y => {
-  let arr = [];
-  
-  Js.Array.from(y) |>
+     let arr = [];
 
-}; */
+     Js.Array.from(y) |>
 
-Tasks.fizzBuzzLoop (Array.to_list (range 1 100));
+   }; */
+/* Tasks.fizzBuzzLoop (Array.to_list (range 1 100)); */
 /* List.; */
 /* Tasks.fizzBuzzLoop ; */
+Problems.First.solution ();
+Problems.Second.solution ();
+Problems.Third.solution ();

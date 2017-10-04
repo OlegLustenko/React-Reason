@@ -9,7 +9,8 @@
     "src/elm-basic/01-functions",
     "src/elm-basic/02-more-on-functions",
     "src/elm-basic/03-type-annotation",
-    "src/elm-basic/04-firstapp"
+    "src/elm-basic/04-firstapp",
+    "src/99problems"
   ],
   "bs-dependencies": ["reason-react", "bs-fetch"],
   "bsc-flags": ["-bs-super-errors"],
