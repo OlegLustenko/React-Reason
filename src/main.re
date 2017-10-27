@@ -3,17 +3,17 @@ type accept;
 
 type update;
 
-external moduleHot : Js.t {..} = "module" [@@bs.val];
+[@bs.val] external moduleHot : Js.t({..}) = "module";
 
 /* Js.log2 ">>>>>" Homework1.oleg; */
 /* Js.log2 ">>>>>" Homework1.jsOleg; */
-let create_Component reactElement => ReactDOMRe.renderToElementWithClassName reactElement "root";
+let create_Component = (reactElement) =>
+  ReactDOMRe.renderToElementWithClassName(reactElement, "root");
 
-let acceptCallback () => create_Component <App message="Exercies:" />;
+let acceptCallback = () => create_Component(<App message="Exercies:" />);
 
-acceptCallback ();
+acceptCallback();
 
-if (Js.to_bool moduleHot##hot) {
-  Js.log2 "%c updating..." "color: green; font-weight: bold;";
-  moduleHot##hot##accept ()
+if (moduleHot##hot |> Js.to_bool) {
+  Js.log2("%c updating...", "color: green; font-weight: bold;")
 };

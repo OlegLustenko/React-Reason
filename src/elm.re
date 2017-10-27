@@ -1,4 +1,4 @@
-let component = ReasonReact.statelessComponent "Elm";
+let component = ReasonReact.statelessComponent("Elm");
 
 let se = ReasonReact.stringToElement;
 
@@ -9,9 +9,9 @@ type exer2Data = {
 
 let exercise2Data: exer2Data = {shortName: "Oleg .L", longName: "Ivanov Ivan Ivanovich"};
 
-let make _children => {
+let make = (_children) => {
   ...component,
-  render: fun _self =>
+  render: (_self) =>
     <ul>
       ("12: " |> se)
       <Exercise1 />

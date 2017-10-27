@@ -6,18 +6,18 @@
    # last [];;
    - : 'a option = None */
 module First = {
-  let last arr =>
-    switch (List.length arr) {
+  let last = (arr) =>
+    switch (List.length(arr)) {
     | 0 => None
-    | 1 => Some (List.hd arr)
-    | _ => Some (arr |> List.rev |> List.hd)
+    | 1 => Some(List.hd(arr))
+    | _ => Some(arr |> List.rev |> List.hd)
     };
-  let solution () => {
-    Js.log (last ["a", "b", "c", "d"]);
-    Js.log (last ["a", "b", "c", "z"]);
-    Js.log (last [])
+  let solution = () => {
+    Js.log(last(["a", "b", "c", "d"]));
+    Js.log(last(["a", "b", "c", "z"]));
+    Js.log(last([]))
   };
-  solution ();
+  solution();
 };
 
 /* 2. Find the last but one (last and penultimate) elements of a list. (easy)
@@ -29,15 +29,15 @@ module First = {
    # last_two [ "a" ];;
    - : (string * string) option = None */
 module Second = {
-  let last_two arr =>
+  let last_two = (arr) =>
     switch arr {
-    | [hd, nd, ...tail] => Some (hd, nd)
+    | [hd, nd, ...tail] => Some((hd, nd))
     | [_]
     | [] => None
     };
-  let solution () => {
-    Js.log (last_two ["a", "b", "c", "d"]);
-    Js.log (last_two ["a"])
+  let solution = () => {
+    Js.log(last_two(["a", "b", "c", "d"]));
+    Js.log(last_two(["a"]))
   };
 };
 
@@ -50,14 +50,14 @@ module Second = {
    # at 3 [ "a" ];;
    - : string option = None */
 module Third = {
-  let rec at num arr =>
+  let rec at = (num, arr) =>
     switch arr {
     | [] => None
-    | [hd, ...tail] => num === 1 ? Some hd : at (num - 1) tail
+    | [hd, ...tail] => num === 1 ? Some(hd) : at(num - 1, tail)
     };
-  let solution () => {
-    Js.log2 "THREE" (at 3 ["a", "b", "c", "d", "e"]);
-    Js.log2 "THREE" (at 3 ["a"])
+  let solution = () => {
+    Js.log2("THREE", at(3, ["a", "b", "c", "d", "e"]));
+    Js.log2("THREE", at(3, ["a"]))
   };
 };
 
@@ -73,14 +73,14 @@ module Third = {
    # length [];;
    - : int = 0 */
 module Four = {
-  let length arr => {
+  let length = (arr) => {
     let counter = 0;
-    let rec len arrInner =>
+    let rec len = (arrInner) =>
       switch arrInner {
       | [] => 0
       | [hd] => hd
-      | [hd, ...tail] => hd + len tail
+      | [hd, ...tail] => hd + len(tail)
       };
-      
+    ()
   };
 };

@@ -5,17 +5,19 @@ module Homework1 = {
     surname: string,
     phone: string
   };
-  type friends = list(friend);
+  type friends = list friend;
   type user = {
     name: string,
     surname: string,
     phone: int,
     friends
   };
+
   type jsUser = {
     name: Js.String.t,
     surname: Js.String.t
   };
+  
   let oleg = {
     name: "Oleg",
     surname: "Lustenko",

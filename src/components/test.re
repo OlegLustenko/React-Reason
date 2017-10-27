@@ -1,9 +1,6 @@
-let component = ReasonReact.statelessComponent "Test";
+let component = ReasonReact.statelessComponent("Test");
 
-
-let make _children => {
+let make = (_children) => {
   ...component,
-  render: fun _self => {
-    <h1>(ReasonReact.stringToElement "Hello Test")</h1>
-  }
-} 
+  render: (_self) => <h1> (ReasonReact.stringToElement("Hello Test")) </h1>
+};

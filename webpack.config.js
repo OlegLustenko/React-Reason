@@ -67,7 +67,7 @@ module.exports = {
     hot: true,
     open: true,
     watchOptions: {
-      ignored: /node_modules/
+      ignored: /node_modules|lib/
     },
     port: 3000,
     overlay: true,

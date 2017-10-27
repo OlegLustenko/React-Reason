@@ -1,49 +1,49 @@
 open Problems;
 
-let component = ReasonReact.statelessComponent "Main";
+/* open Inifinity_index; */
+let component = ReasonReact.statelessComponent("Main");
 
-let make _children => {
+let make = (_children) => {
   ...component,
-  render: fun _self => <h1> (ReasonReact.stringToElement "OK") </h1>
+  render: (_self) => <h1> (ReasonReact.stringToElement("OK")) </h1>
 };
 
 module Tasks = {
-  type quota = list int;
-  let fizzBuzz num =>
+  type quota = list(int);
+  let fizzBuzz = (num) =>
     switch num {
     | _ when num mod 3 == 0 && num mod 5 == 0 => "FizzBuzz"
     | _ when num mod 3 == 0 => "Fizz"
     | _ when num mod 5 == 0 => "Buzz"
-    | _ => string_of_int num
+    | _ => string_of_int(num)
     };
-  let fizzBuzzLoop quota => List.iter (fun item => Js.log (fizzBuzz item)) quota;
-  let fizzBuzz2 num =>
+  let fizzBuzzLoop = (quota) => List.iter((item) => Js.log(fizzBuzz(item)), quota);
+  let fizzBuzz2 = (num) =>
     switch (num mod 3, num mod 5) {
     | (0, 0) => "FizzBuzz"
     | (0, _) => "Fizz"
     | (_, 0) => "Buzz"
-    | (_, _) => string_of_int num
+    | (_, _) => string_of_int(num)
     };
 };
 
-for x in 1 to 100 {
-  Js.log (Tasks.fizzBuzz2 x)
+for (x in 1 to 100) {
+  {/* Js.log (Tasks.fizzBuzz2 x) */}
 };
 
 type range = int => int;
 
-let add a b => a + b;
+let add = (a, b) => a + b;
 
-let range x y => {
+let range = (x, y) => {
   let arr = [||];
   /* let arr_l = []; */
-  for num in x to y {
+  for (num in x to y) {
     /* List.concat [num] arr_l; */
-    Js.Array.push num arr
+    Js.Array.push(num, arr)
   };
   arr
 };
-
 /* let rangeL x y => {
      let arr = [];
 
@@ -53,6 +53,7 @@ let range x y => {
 /* Tasks.fizzBuzzLoop (Array.to_list (range 1 100)); */
 /* List.; */
 /* Tasks.fizzBuzzLoop ; */
-Problems.First.solution ();
-Problems.Second.solution ();
-Problems.Third.solution ();
+/* Problems.First.solution ();
+   Problems.Second.solution ();
+   Problems.Third.solution (); */
+/* Js.log (Inifinity_index.generate 10); */

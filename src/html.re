@@ -1,3 +1,3 @@
- module Html = {
-  let text = ReasonReact.stringToElement
-} 
+module Html = {
+  let text = ReasonReact.stringToElement;
+};

@@ -1,24 +1,26 @@
 include Html;
 
-let component = ReasonReact.statelessComponent "Exercies2";
+let component = ReasonReact.statelessComponent("Exercies2");
 
-let defPropShortName:string = "Oleg L.";
-let capitalize name maxLength => 
-  if (String.length name > maxLength) {
-    String.uppercase name
-  } else 
-    name;
+let defPropShortName: string = "Oleg L.";
 
-let make ::name=defPropShortName _children => {
+let capitalize = (name, maxLength) =>
+  if (String.length(name) > maxLength) {
+    String.uppercase(name)
+  } else {
+    name
+  };
+
+let make = (~name=defPropShortName, _children) => {
   ...component,
-  render: fun _self => {
+  render: (_self) =>
     <div>
-      <p>(
-        capitalize name 10
-        ^ " -name length: " 
-        ^ string_of_int (String.length name)
-        |> Html.text      
-      )</p>
+      <p>
+        (
+          capitalize(name, 10)
+          ++ (" -name length: " ++ string_of_int(String.length(name)))
+          |> Html.text
+        )
+      </p>
     </div>
-  }
-}
+};

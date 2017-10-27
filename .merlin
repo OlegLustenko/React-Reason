@@ -1,33 +1,32 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx '/Users/olehlustenko/projects/React-Reason/node_modules/bs-platform/bin/reactjs_jsx_ppx_2.exe'
-FLG -ppx /Users/olehlustenko/projects/React-Reason/node_modules/bs-platform/bin/bsppx.exe
-S /Users/olehlustenko/projects/React-Reason/node_modules/bs-platform/lib/ocaml
-B /Users/olehlustenko/projects/React-Reason/node_modules/bs-platform/lib/ocaml
-FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
-S /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
-B /Users/olehlustenko/projects/React-Reason/node_modules/reason-react/lib/ocaml
-S /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
-B /Users/olehlustenko/projects/React-Reason/node_modules/bs-fetch/lib/ocaml
-S src/99problems
-B lib/bs/src/99problems
-S src/elm-basic/04-firstapp
-B lib/bs/src/elm-basic/04-firstapp
-S src/elm-basic/03-type-annotation
-B lib/bs/src/elm-basic/03-type-annotation
-S src/elm-basic/02-more-on-functions
-B lib/bs/src/elm-basic/02-more-on-functions
-S src/elm-basic/01-functions
-B lib/bs/src/elm-basic/01-functions
-S src/elm-basic
-B lib/bs/src/elm-basic
+FLG -ppx '/Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-platform/bin/reactjs_jsx_ppx_2.exe'
+FLG -ppx /Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-platform/bin/bsppx.exe
+S /Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-platform/lib/ocaml
+B /Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -no-alias-deps -color always
+FLG -w -30-40+6+7+27+32..39+44+45+101
+S /Users/olehlustenko/projects/learning/React-Reason/node_modules/reason-react/lib/ocaml
+B /Users/olehlustenko/projects/learning/React-Reason/node_modules/reason-react/lib/ocaml
+S /Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-fetch/lib/ocaml
+B /Users/olehlustenko/projects/learning/React-Reason/node_modules/bs-fetch/lib/ocaml
+S src
+B lib/bs/src
 S src/homeworks
 B lib/bs/src/homeworks
 S src/components
 B lib/bs/src/components
+S src/infinity-scroll
+B lib/bs/src/infinity-scroll
+S src/elm-basic/01-functions
+B lib/bs/src/elm-basic/01-functions
+S src/elm-basic/02-more-on-functions
+B lib/bs/src/elm-basic/02-more-on-functions
+S src/elm-basic/03-type-annotation
+B lib/bs/src/elm-basic/03-type-annotation
+S src/elm-basic/04-firstapp
+B lib/bs/src/elm-basic/04-firstapp
 S src/auth
 B lib/bs/src/auth
-S src
-B lib/bs/src
 ####BSB GENERATED: NO EDIT}
 
 PKG utop merlin_extend compiler-libs easy-format MenhirLib cmdliner ocaml-migrate-parsetree topkg

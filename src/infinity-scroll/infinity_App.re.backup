@@ -1,0 +1,4 @@
+let make _children => {
+  ...ReasonReact.statelessComponent "Infinity_App",
+  render: fun _self => <h1> (ReasonReact.stringToElement "Test") </h1>
+};

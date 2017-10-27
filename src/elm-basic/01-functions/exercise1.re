@@ -1,15 +1,12 @@
 include Html;
 
-let component = ReasonReact.statelessComponent "Exercise1";
+let component = ReasonReact.statelessComponent("Exercise1");
 
-  let myName: string = "Oleg";
- 
-let handleClick _event _self => Js.log "clicked!";
+let myName: string = "Oleg";
 
-let make _children => {
-    ...component,
-  render: fun _self => 
-    <section>
-      <div>(Html.text myName)</div>
-    </section> 
+let handleClick = (_event, _self) => Js.log("clicked!");
+
+let make = (_children) => {
+  ...component,
+  render: (_self) => <section> <div> (Html.text(myName)) </div> </section>
 };

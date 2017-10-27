@@ -1,3 +1,1 @@
-module Consts = {
-  
-}
+module Consts = {};

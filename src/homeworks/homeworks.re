@@ -1,5 +1,4 @@
-let component = ReasonReact.statelessComponent "Homeworks";
-
-/* let homeworks = 
-  | None
-  | ; */
+let component = ReasonReact.statelessComponent("Homeworks");
+/* let homeworks =
+   | None
+   | ; */
